@@ -2,6 +2,14 @@ function App() {
   return (
     <main className="min-h-screen">
       <section>
+        <div className="Navbar">
+          <img src="public/logo.png" alt="Loochon" className="logo" />
+          <button className="button-icon" type="button" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
         <div className="first-header">
           <div className="left-header">
             <div className="left-header-content">

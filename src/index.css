@@ -7,9 +7,45 @@ body {
   background-color: rgba(246, 249, 252);
 }
 
-.first-header {
+.Navbar {
   display: flex;
-  background-color: #f0f0f0;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(200, 249, 252);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  height: 10vh;
+  
+}
+
+.button-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.button-icon span {
+  display: block;
+  width: 24px;
+  height: 3px;
+  margin: 0 auto;
+  border-radius: 999px;
+  background-color: rgba(10, 37, 64);
+}
+
+.first-header {
+   position: relative;
+  display: flex;
+  /*background-color: #f0f0f0;*/
   padding: 20px;
   border-radius: 10px;
   margin: 20px;
@@ -124,10 +160,10 @@ body {
 
 .diagonal-stripe {
   position: absolute;
-  top: -450px;
-  left: -10%; /* Extends past left border */
+  top: -550px;
+  left: -45%; /* Extends past left border */
   
-  width: 150%; /* Extra width ensures it stays connected to borders when tilted */
+  width: 300%; /* Extra width ensures it stays connected to borders when tilted */
   height: 150px; /* The thickness of your stripe */
   overflow: hidden;
   background:
@@ -180,16 +216,8 @@ body {
   }
 }
 
-@keyframes stripe-fluctuation {
-  0% {
-    transform: translate3d(-4%, -8%, 0) scale(1);
-  }
-
-  50% {
-    transform: translate3d(5%, 6%, 0) scale(1.12);
-  }
-
-  100% {
-    transform: translate3d(12%, -4%, 0) scale(1.04);
-  }
+.logo {
+  margin-left: 0px;
+  width: 20%;
+  height: 100%;
 }
