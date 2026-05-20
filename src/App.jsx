@@ -18,6 +18,7 @@ function App() {
                 with <span className="Loochon-highlight">Loochon</span>
               </h2>
             </div>
+            
             <div className="left-header-content-description">
               <p>Loochon is a platform that allows you to hire local professionals and offer your skills to the world.</p>
             </div>
