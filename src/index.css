@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: rgba(246, 249, 252)
+}
+
+.first-header {
+  display: flex;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  height: 100vh;
+}
+
+.left-header {
+  flex: 1;
+}
+
+.left-header-content, .right-header-content {
+  max-width: 100%;
+  color: rgba(10, 37, 64);
+}
+
+.left-header-content-title {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.left-header-content-subtitle {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.Loochon-highlight {
+  color: rgb(0, 170, 170);
+  font-weight: 700;
+  text-decoration: underline;
+  
+}
+
+.left-header-content-description {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgba(66, 84, 102);
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.right-header {
+  flex: 1;
+}
+
+.offer-image-container {
+  position: relative;
+  width: 430px;
+  height: 430px;
+  margin-top: 100px;
+  margin-left: 30px;
+}
+
+.offer-image {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 240px;
+  height: auto;
+  border-radius: 30px;
+  border-style: solid;
+  border-width: 7px;
+  border-color: rgba(255, 255, 255, 1);
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hire-image {
+  margin-top: 0px;
+  position: absolute;
+  top: 70px;
+  left: 190px;
+  z-index: 1;
+  display: block;
+  width: 190px;
+  height: auto;
+  border-radius: 30px;
+  border-style: solid;
+  border-width: 7px;
+  border-color: rgba(255, 255, 255, 1);
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
