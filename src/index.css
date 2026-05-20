@@ -4,7 +4,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-color: rgba(246, 249, 252)
+  background-color: rgba(246, 249, 252);
 }
 
 .first-header {
@@ -54,39 +54,30 @@ body {
   flex: 1;
 }
 
+
+
 .offer-image-container {
-  position: relative;
-  width: 430px;
-  height: 430px;
-  margin-top: 100px;
+  margin-top: 60px;
+  width: fit-content;
   margin-left: 30px;
+  padding: 9px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 32px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(130, 130, 130, 0.7);
+  
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
+
+
 
 .offer-image {
-  position: relative;
-  z-index: 2;
-  display: block;
-  width: 240px;
-  height: auto;
-  border-radius: 30px;
   border-style: solid;
-  border-width: 7px;
-  border-color: rgba(255, 255, 255, 1);
-  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
-}
-
-.hire-image {
-  margin-top: 0px;
-  position: absolute;
-  top: 70px;
-  left: 190px;
-  z-index: 1;
+  border-width: 1px;
+  border-color: rgba(130, 130, 130, 0.7);
   display: block;
-  width: 190px;
+  width: 200px;
   height: auto;
-  border-radius: 30px;
-  border-style: solid;
-  border-width: 7px;
-  border-color: rgba(255, 255, 255, 1);
-  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
 }

@@ -16,7 +16,7 @@ function App() {
             <div className="right-header-content">
               <div className="offer-image-container">
               <img src="public\offer.jpg" className="offer-image"/>
-              <img src="public\hire.jpg" className="hire-image"/>
+              
               </div>
               
             </div>
