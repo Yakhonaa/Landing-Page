@@ -159,13 +159,15 @@ body {
   margin-top: 30px;
 }
 
+
+
 .left-header-content-button {
   width: 100%;
   border: none;
   background:
-    radial-gradient(circle at 15% 50%, rgba(0, 255, 220, 0.85), transparent 24%),
-    radial-gradient(circle at 45% 30%, rgba(99, 102, 241, 0.9), transparent 28%),
-    radial-gradient(circle at 75% 60%, rgba(236, 72, 153, 0.75), transparent 24%),
+    radial-gradient(circle at 15% 50%, rgba(0, 255, 220, 0.85), transparent 50%),
+    radial-gradient(circle at 45% 30%, rgba(99, 102, 241, 0.9), transparent 50%),
+    radial-gradient(circle at 75% 60%, rgba(99, 102, 241, 0.9), transparent 50%),
     linear-gradient(90deg, #00aaaa, #3b82f6, #8b5cf6, #00aaaa);
   background-size: 180% 180%, 160% 160%, 170% 170%, 300% 100%;
   color: white;
@@ -179,10 +181,6 @@ body {
   box-shadow: 1px 3px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-.left-header-content-button:hover {
-  filter: brightness(1.08);
-}
-
 .stripe-wrapper {
   position: relative;
   width: 100%;
@@ -192,7 +190,7 @@ body {
 
 .diagonal-stripe {
   position: absolute;
-  top: -680px;
+  top: -740px;
   left: -45%; /* Extends past left border */
   
   width: 300%; /* Extra width ensures it stays connected to borders when tilted */
@@ -207,7 +205,7 @@ body {
   animation: stripe-gradient 9s ease-in-out infinite;
   
   /* Centers the anchor point and applies the rotation */
-  rotate: -25deg;
+  rotate: -20deg;
 }
 
 .diagonal-stripe::before,
