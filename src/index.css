@@ -23,7 +23,7 @@ body {
   margin-left: 20px;
   
   height: 10vh;
-  background-image: linear-gradient(to right, rgb(0, 170, 170) 55%, rgba(0,0,0,0) 0%);
+  background-image: linear-gradient(to right, rgb(0, 170, 170) 100%, rgba(0,0,0,0) 0%);
   background-position: bottom;
   background-size: 15px 2px; /* 15px is the dash + gap width; 2px is border thickness */
   background-repeat: repeat-x;
@@ -78,13 +78,24 @@ html, body {
   flex: 1;
 }
 
+.top-header-content {
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
 .left-header-content, .right-header-content {
   max-width: 100%;
   color: rgba(10, 37, 64);
 }
 
 .left-header-content-title, .left-header-content-subtitle {
-  font-size: calc(4.5*var(--fluid-metric));
+  font-size: calc(12*var(--fluid-metric));
+  color: rgba(10, 37, 64);
   font-weight: 700;
 }
 
@@ -101,7 +112,7 @@ html, body {
   font-weight: 700;
   color: rgba(66, 84, 102);
   padding-right: 20px;
-  padding-top: 20px;
+  
 }
 
 .right-header {
@@ -111,15 +122,6 @@ html, body {
 .right-header-content {
   position: relative;
 }
-
-.image-stack {
-  position: relative;
-  width: calc(86*var(--fluid-metric));
-  height: calc(72*var(--fluid-metric));
-  margin-top: 60px;
-  margin-left: 0px;
-}
-
 
 .offer-image-container {
   position: relative;
@@ -135,19 +137,6 @@ html, body {
   box-shadow: calc(1*var(--fluid-metric)) calc(1*var(--fluid-metric)) calc(1*var(--fluid-metric)) calc(1*var(--fluid-metric)) rgba(0, 0, 0, 0.1);
 }
 
-.hire-image-container {
-  position: absolute;
-  top: calc(14*var(--fluid-metric));
-  left: calc(31*var(--fluid-metric));
-  z-index: 1;
-  width: fit-content;
-  padding: calc(1.6*var(--fluid-metric));
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgba(130, 130, 130, 0.7);
-  border-radius: calc(5.2*var(--fluid-metric));
-  box-shadow: calc(1*var(--fluid-metric)) calc(1*var(--fluid-metric)) calc(1*var(--fluid-metric)) calc(1*var(--fluid-metric)) rgba(0, 0, 0, 0.1);
-}
-
 
 
 .offer-image {
@@ -160,17 +149,21 @@ html, body {
   border-radius: calc(4.4*var(--fluid-metric));
 }
 
-.hire-image {
-  display: block;
-  width: calc(32*var(--fluid-metric));
-  height: auto;
-  border: 1px solid rgba(130, 130, 130, 0.7);
-  border-radius: calc(3.6*var(--fluid-metric));
+.left-header-content-buttons-container{
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .left-header-content-buttons {
   width: 80%;
   margin-top: 30px;
+  position: relative;
+  top: -450px;
 }
 
 
@@ -204,7 +197,7 @@ html, body {
 
 .diagonal-stripe {
   position: absolute;
-  top: -540px;
+  top: -820px;
   left: -45%; /* Extends past left border */
   
   width: 300%; /* Extra width ensures it stays connected to borders when tilted */
