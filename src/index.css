@@ -7,6 +7,11 @@ body {
   background-color: rgba(246, 249, 252);
 }
 
+:root {
+  /* This creates a fluid base metric that equals exactly 1% of the viewport width */
+  --fluid-metric: 1vw;
+}
+
 .Navbar {
   display: flex;
   align-items: center;
@@ -14,13 +19,20 @@ body {
   background-color: rgba(246, 249, 252);
   padding: 20px;
   border-radius: 10px;
-  margin: 20px;
-  margin-bottom: 55px;
+  margin-right: 20px;
+  margin-left: 20px;
+  
   height: 10vh;
   background-image: linear-gradient(to right, rgb(0, 170, 170) 55%, rgba(0,0,0,0) 0%);
   background-position: bottom;
   background-size: 15px 2px; /* 15px is the dash + gap width; 2px is border thickness */
   background-repeat: repeat-x;
+}
+
+.logo {
+  margin-left: 0px;
+  width: calc(30*var(--fluid-metric));
+  height: 100%;
 }
 
 .button-icon {
@@ -37,6 +49,13 @@ body {
   cursor: pointer;
 }
 
+html, body {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  position: relative;
+}
+
 .button-icon span {
   display: block;
   width: 24px;
@@ -49,7 +68,7 @@ body {
    position: relative;
   display: flex;
   /*background-color: #f0f0f0;*/
-  padding: 20px;
+  padding: calc(2.5*var(--fluid-metric));
   border-radius: 10px;
   margin: 20px;
   height: 100vh;
@@ -64,15 +83,11 @@ body {
   color: rgba(10, 37, 64);
 }
 
-.left-header-content-title {
-  font-size: 36px;
+.left-header-content-title, .left-header-content-subtitle {
+  font-size: calc(4.5*var(--fluid-metric));
   font-weight: 700;
 }
 
-.left-header-content-subtitle {
-  font-size: 36px;
-  font-weight: 700;
-}
 
 .Loochon-highlight {
   color: rgb(0, 170, 170);
@@ -99,39 +114,38 @@ body {
 
 .image-stack {
   position: relative;
-  width: 430px;
-  height: 360px;
+  width: calc(86*var(--fluid-metric));
+  height: calc(72*var(--fluid-metric));
   margin-top: 60px;
-  margin-left: 30px;
+  margin-left: 0px;
 }
-
 
 
 .offer-image-container {
   position: relative;
   z-index: 2;
   width: fit-content;
-  padding: 9px;
+  padding: calc(1.8*var(--fluid-metric));
   background-color: rgb(255, 255, 255);
-  border-radius: 32px;
+  border-radius: calc(6.4*var(--fluid-metric));
   border-style: solid;
   border-width: 1px;
   border-color: rgba(130, 130, 130, 0.7);
   
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: calc(1*var(--fluid-metric)) calc(1*var(--fluid-metric)) calc(1*var(--fluid-metric)) calc(1*var(--fluid-metric)) rgba(0, 0, 0, 0.1);
 }
 
 .hire-image-container {
   position: absolute;
-  top: 70px;
-  left: 155px;
+  top: calc(14*var(--fluid-metric));
+  left: calc(31*var(--fluid-metric));
   z-index: 1;
   width: fit-content;
-  padding: 8px;
+  padding: calc(1.6*var(--fluid-metric));
   background-color: rgb(255, 255, 255);
   border: 1px solid rgba(130, 130, 130, 0.7);
-  border-radius: 28px;
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: calc(5.2*var(--fluid-metric));
+  box-shadow: calc(1*var(--fluid-metric)) calc(1*var(--fluid-metric)) calc(1*var(--fluid-metric)) calc(1*var(--fluid-metric)) rgba(0, 0, 0, 0.1);
 }
 
 
@@ -141,17 +155,17 @@ body {
   border-width: 1px;
   border-color: rgba(130, 130, 130, 0.7);
   display: block;
-  width: 200px;
+  width: calc(40*var(--fluid-metric));
   height: auto;
-  border-radius: 20px;
+  border-radius: calc(4.4*var(--fluid-metric));
 }
 
 .hire-image {
   display: block;
-  width: 160px;
+  width: calc(32*var(--fluid-metric));
   height: auto;
   border: 1px solid rgba(130, 130, 130, 0.7);
-  border-radius: 18px;
+  border-radius: calc(3.6*var(--fluid-metric));
 }
 
 .left-header-content-buttons {
@@ -190,7 +204,7 @@ body {
 
 .diagonal-stripe {
   position: absolute;
-  top: -740px;
+  top: -540px;
   left: -45%; /* Extends past left border */
   
   width: 300%; /* Extra width ensures it stays connected to borders when tilted */
@@ -244,10 +258,4 @@ body {
   100% {
     background-position: 0% 50%, 100% 50%, 40% 50%, 0% 50%;
   }
-}
-
-.logo {
-  margin-left: 0px;
-  width: 20%;
-  height: 100%;
 }

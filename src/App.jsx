@@ -1,6 +1,7 @@
 function App() {
   return (
     <main className="min-h-screen">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       <section>
         <div className="Navbar">
           <img src="public/logo.png" alt="Loochon" className="logo" />
