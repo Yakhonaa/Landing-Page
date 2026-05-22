@@ -4,7 +4,7 @@ function App() {
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       <section>
         <div className="Navbar">
-          <img src="public/logo.png" alt="Loochon" className="logo" />
+          <img src="public/icon_foreground.png" alt="Loochon" className="logo" />
           <button className="button-icon" type="button" aria-label="Open menu">
             <span></span>
             <span></span>
@@ -45,11 +45,16 @@ function App() {
         <div className="quick-overall">
           <div className="quick-overall-content">
             <h3 className="quick-overall-content-title">Anything</h3>
-            <p className="quick-overall-content-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            <p className="quick-overall-content-description">
+              Over 250 categories to choose from, and 10,000+ verified professionals.
+            </p>
           </div>
+          <div className="quick-overall-content-separator"></div>
           <div className="quick-overall-content">
             <h3 className="quick-overall-content-title">Anywhere</h3>
-            <p className="quick-overall-content-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            <p className="quick-overall-content-description">
+              Hire professionals all across Columbia, or offer your skills in your region.
+            </p>
           </div>
         </div>
         <div className="stripe-wrapper">
