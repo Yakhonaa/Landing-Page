@@ -42,6 +42,16 @@ function App() {
               <button className="left-header-content-button">Get Started</button>
             </div>
         </div>
+        <div className="quick-overall">
+          <div className="quick-overall-content">
+            <h3 className="quick-overall-content-title">Anything</h3>
+            <p className="quick-overall-content-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+          </div>
+          <div className="quick-overall-content">
+            <h3 className="quick-overall-content-title">Anywhere</h3>
+            <p className="quick-overall-content-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+          </div>
+        </div>
         <div className="stripe-wrapper">
   <div className="diagonal-stripe"></div>
 </div>
