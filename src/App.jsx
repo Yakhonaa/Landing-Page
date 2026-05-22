@@ -17,49 +17,50 @@ function App() {
                 with <span className="Loochon-highlight">Loochon</span>
               </h2>
             </div>
-        <div className="first-header">
-          
+        <div className="first-header"> 
           <div className="left-header">
-            
             <div className="left-header-content-description">
               <p>Loochon is a platform that allows you to hire local professionals and offer your skills to the world.</p>
             </div>
-            
           </div>
           <div className="right-header">
             <div className="right-header-content">
               <div className="image-stack">
                 <div className="offer-image-container">
                   <img src="/offer.jpg" className="offer-image" alt="Offer preview" />
-                </div>
-                
+                </div>    
               </div>
             </div>
           </div>
+        </div>
+        <div className="stripe-wrapper">
+          <div className="diagonal-stripe"></div>
         </div>
         <div className="left-header-content-buttons-container">
           <div className="left-header-content-buttons">
               <button className="left-header-content-button">Get Started</button>
             </div>
         </div>
+        <h3 className="quick-overall-content-title">Reach out to professionals anywhere across <span className="highlight">Columbia</span></h3>
         <div className="quick-overall">
-          <div className="quick-overall-content">
-            <h3 className="quick-overall-content-title">Anything</h3>
+          <div className="quick-overall-content"> 
             <p className="quick-overall-content-description">
               Over 250 categories to choose from, and 10,000+ verified professionals.
             </p>
           </div>
           <div className="quick-overall-content-separator"></div>
-          <div className="quick-overall-content">
-            <h3 className="quick-overall-content-title">Anywhere</h3>
+          <div className="quick-overall-content"> 
             <p className="quick-overall-content-description">
               Hire professionals all across Columbia, or offer your skills in your region.
             </p>
           </div>
         </div>
         <div className="stripe-wrapper">
-  <div className="diagonal-stripe"></div>
-</div>
+          <div className="diagonal-stripe-2"></div>
+        </div>
+        <div className="get-started-container">
+            <h3 className="get-started-title">Get started</h3>
+          </div>
       </section>
     </main>
   )

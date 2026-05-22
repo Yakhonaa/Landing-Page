@@ -28,9 +28,9 @@ main {
   margin-left: 0px;
   
   height: 8vh;
-  background-image: linear-gradient(to right, rgb(0, 170, 170) 100%, rgba(0,0,0,0) 0%);
+  background-image: linear-gradient(to right,rgb(80, 30, 247, 0.75) 100%, rgba(0,0,0,0) 0%);
   background-position: bottom;
-  background-size: 10px 2px; /* 15px is the dash + gap width; 2px is border thickness */
+  background-size: 10px 4px; /* 15px is the dash + gap width; 2px is border thickness */
   background-repeat: repeat-x;
   margin-bottom: 40px;
 }
@@ -64,7 +64,7 @@ html, body {
   width: 24px;
   height: 3px;
   margin: 0 auto;
-  background-color:  rgb(0, 170, 170);
+  background-color:  rgb(80, 30, 247, 0.75);
 }
 
 .first-header {
@@ -175,11 +175,10 @@ html, body {
   width: 100%;
   border: none;
   background:
-    radial-gradient(circle at 15% 50%, rgba(0, 255, 220, 0.85), transparent 50%),
-    radial-gradient(circle at 45% 30%, rgba(99, 102, 241, 0.9), transparent 50%),
-    radial-gradient(circle at 75% 60%, rgba(99, 102, 241, 0.9), transparent 50%),
-    linear-gradient(90deg, #00aaaa, #3b82f6, #8b5cf6, #00aaaa);
-  background-size: 180% 180%, 160% 160%, 170% 170%, 300% 100%;
+    radial-gradient(circle at 25% 45%, rgba(160, 100, 254, 0.8), transparent 34%),
+    radial-gradient(circle at 75% 55%, rgba(147, 51, 234, 0.75), transparent 36%),
+    linear-gradient(100deg, rgb(100, 80, 237), rgb(124, 58, 237), rgb(168, 85, 247));
+  background-size: 200% 200%, 200% 200%, 100% 100%;
   color: white;
   border-radius: 10px;
   padding: 10px;
@@ -187,8 +186,8 @@ html, body {
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
-  animation: stripe-gradient 9s ease-in-out infinite;
-  box-shadow: 1px 3px 5px 5px rgba(0, 0, 0, 0.1);
+
+  box-shadow: 0 0 30px 3px rgba(0, 100, 220, 0.15);
 }
 
 .stripe-wrapper {
@@ -209,16 +208,37 @@ html, body {
   height: 150px; /* The thickness of your stripe */
   overflow: hidden;
   background:
-    radial-gradient(circle at 15% 50%, rgba(0, 255, 220, 0.85), transparent 24%),
-    radial-gradient(circle at 45% 30%, rgba(99, 102, 241, 0.9), transparent 28%),
-    radial-gradient(circle at 75% 60%, rgba(236, 72, 153, 0.75), transparent 24%),
-    linear-gradient(90deg, #00aaaa, #3b82f6, #8b5cf6, #00aaaa);
-  background-size: 180% 180%, 160% 160%, 170% 170%, 300% 100%;
+    radial-gradient(circle at 25% 45%, rgba(160, 100, 254, 0.8), transparent 34%),
+    radial-gradient(circle at 75% 55%, rgba(147, 51, 234, 0.75), transparent 36%),
+    linear-gradient(100deg, rgb(100, 80, 237), rgb(124, 58, 237), rgb(168, 85, 247));
+  background-size: 200% 200%, 200% 200%, 100% 100%;
   animation: stripe-gradient 9s ease-in-out infinite;
   
   /* Centers the anchor point and applies the rotation */
   rotate: -20deg;
+  box-shadow: 0 0 10px 1px rgba(0, 200, 220, 0.25);
 }
+
+.diagonal-stripe-2 {
+  position: absolute;
+  top: 1100px;
+  left: -45%; /* Extends past left border */
+  width: 300%; /* Extra width ensures it stays connected to borders when tilted */
+  height: 10px; /* The thickness of your stripe */
+  overflow: hidden;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 25% 45%, rgba(216, 180, 254, 0.8), transparent 34%),
+    radial-gradient(circle at 75% 55%, rgba(147, 51, 234, 0.75), transparent 36%),
+    linear-gradient(100deg, rgb(100, 80, 237), rgb(124, 58, 237), rgb(168, 85, 247));
+  background-size: 200% 200%, 200% 200%, 100% 100%;
+  animation: stripe-gradient 9s ease-in-out infinite;
+  
+  /* Centers the anchor point and applies the rotation */
+  rotate: 0deg;
+  box-shadow: 0 0 10px 1px rgba(124, 58, 237 0.25);
+}
+
 
 .diagonal-stripe::before,
 .diagonal-stripe::after {
@@ -283,9 +303,11 @@ html, body {
 }
 
 .quick-overall-content-title {
-  font-size: calc(9*var(--fluid-metric));
+  font-size: calc(7*var(--fluid-metric));
   font-weight: 700;
   color: rgba(10, 37, 64);
+  margin-left:25px;
+  margin-top:50px;
 } 
 
 .quick-overall-content-description {
@@ -297,5 +319,20 @@ html, body {
 .quick-overall-content-separator {
   flex: 0 0 1px;
   align-self: stretch;
-  background-color: rgba(10, 37, 64, 0.2);
+  background-color: rgba(10, 37, 64, 1);
+}
+
+.highlight {
+  color: rgb(120, 30, 247, 0.75);
+  font-weight: 700;
+}
+
+.get-started-container {
+  width: 100%;
+  align-items: left;
+  margin-left: 25px;
+  margin-top: 80px;
+  font-size: calc(9*var(--fluid-metric));
+  font-weight: 700;
+  color: rgba(10, 37, 64);
 }
