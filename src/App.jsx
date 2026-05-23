@@ -65,8 +65,12 @@ function App() {
           <h3 className="hire-specialists-title">Hire specialists quickly</h3>
           <p className="hire-specialists-description">
             Reach out to an expert in your area and get the job done in less than a minute.
-            Our platform is designed to be easy to use and navigate, so you can get the job done quickly and efficiently.
+            Our platform is designed to be easy to use and navigate, so you can get the 
+            job done quickly and efficiently.
           </p>
+          <div className="stripe-wrapper">
+            <div className="diagonal-stripe-3"></div>
+          </div>
           <div className="prestadores-image-container-wrapper">
             <div className="prestadores-container">
               <img src="/prestadores.jpg" className="prestadores-image" alt="Hire specialists" />
@@ -75,24 +79,63 @@ function App() {
         </div>
         <div className="hire-specialists-container">
           <h3 className="hire-specialists-title">Let others find you</h3>
+          <div className="stripe-wrapper">
+            <div className="diagonal-stripe-6"></div>
+          </div>
           <p className="hire-specialists-description">
             Create a profile and let others know about your skills and services.
             Get hired for your next project and expand your career opportunities, 
             or start your own business and grow your network.
           </p>
+          <div className="stripe-wrapper">
+            <div className="diagonal-stripe-4"></div>
+          </div>
           <div className="prestadores-image-container-wrapper">
             <div className="prestadores-container">
-              <img src="/offer_singular.jpg" className="prestadores-image" alt="Hire specialists" />
+              <img src="/prestadores.jpg" className="prestadores-image" alt="Hire specialists" />
             </div>
           </div>
         </div>
         <div className="hire-specialists-container">
-          <h3 className="hire-specialists-title">Use both sides of the platform</h3>
+          <h3 className="hire-specialists-title-special-2">Use both sides of the platform</h3>
           <p className="hire-specialists-description">
-            We support multiple roles in the platform, so you can use both sides to your advantage.
+          Why limit yourself? Our platform is designed for the modern ecosystem where you 
+          might be an employer today and a creator tomorrow. We’ve built a 
+          comprehensive marketplace supporting over 200 distinct job categories, 
+          ensuring that no matter how niche your project or skill set is, you have a home here.
           </p>
-          
         </div>
+
+        <div className="stripe-wrapper">
+            <div className="diagonal-stripe-5"></div>
+          </div>
+
+        <div className="why-us-container">
+           <h3 className="why-us-title">Why us?</h3>
+           <p className="why-us-description">
+           <ul>
+            <li className="highlight-list">🇨🇴 100% Colombian Coverage</li>
+            <li>We are Colombia's first freelance platform, which
+              maps major metropolitan hubs down to regional 
+              municipalities. Search and filter by exact 
+              location to instantly find pioneering 
+              local professionals who perfectly match your regional context.</li><br />
+
+               <li className="highlight-list">🛠️ 200+ Industries At Your Fingertips</li>
+            <li>Our platform spans over 200 job categories. Whether you need reliable hands-on help—like 
+              licensed electricians, professional cleaners, and construction experts—or 
+              specialized trade services, 
+              the exact professional you need in your city is just a message away.</li><br />
+
+            <li className="highlight-list">💬 Real-Time, Direct Communication</li>
+            <li>Skip the traditional agency red tape. Loochon puts you in
+               direct contact with experts instantly, making collaboration, 
+               negotiation, and project updates effortless.</li><br />
+            
+           </ul>
+          </p>
+        </div>
+
       </section>
     </main>
   )
