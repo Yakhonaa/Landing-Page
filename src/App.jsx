@@ -41,7 +41,7 @@ function App() {
               <button className="left-header-content-button">Get Started</button>
             </div>
         </div>
-        <h3 className="quick-overall-content-title">Reach out to professionals anywhere across <span className="highlight">Columbia</span></h3>
+        <h3 className="quick-overall-content-title">Reach out to professionals anywhere across <span className="highlight">Colombia</span></h3>
         <div className="quick-overall">
           <div className="quick-overall-content"> 
             <p className="quick-overall-content-description">
@@ -51,7 +51,7 @@ function App() {
           <div className="quick-overall-content-separator"></div>
           <div className="quick-overall-content"> 
             <p className="quick-overall-content-description">
-              Hire professionals all across Columbia, or offer your skills in your region.
+              Hire professionals all across Colombia, or offer your skills in your region.
             </p>
           </div>
         </div>
@@ -61,6 +61,38 @@ function App() {
         <div className="get-started-container">
             <h3 className="get-started-title">Get started</h3>
           </div>
+        <div className="hire-specialists-container">
+          <h3 className="hire-specialists-title">Hire specialists quickly</h3>
+          <p className="hire-specialists-description">
+            Reach out to an expert in your area and get the job done in less than a minute.
+            Our platform is designed to be easy to use and navigate, so you can get the job done quickly and efficiently.
+          </p>
+          <div className="prestadores-image-container-wrapper">
+            <div className="prestadores-container">
+              <img src="/prestadores.jpg" className="prestadores-image" alt="Hire specialists" />
+            </div>
+          </div>
+        </div>
+        <div className="hire-specialists-container">
+          <h3 className="hire-specialists-title">Let others find you</h3>
+          <p className="hire-specialists-description">
+            Create a profile and let others know about your skills and services.
+            Get hired for your next project and expand your career opportunities, 
+            or start your own business and grow your network.
+          </p>
+          <div className="prestadores-image-container-wrapper">
+            <div className="prestadores-container">
+              <img src="/offer_singular.jpg" className="prestadores-image" alt="Hire specialists" />
+            </div>
+          </div>
+        </div>
+        <div className="hire-specialists-container">
+          <h3 className="hire-specialists-title">Use both sides of the platform</h3>
+          <p className="hire-specialists-description">
+            We support multiple roles in the platform, so you can use both sides to your advantage.
+          </p>
+          
+        </div>
       </section>
     </main>
   )

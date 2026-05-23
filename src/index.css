@@ -28,7 +28,7 @@ main {
   margin-left: 0px;
   
   height: 8vh;
-  background-image: linear-gradient(to right,rgb(80, 30, 247, 0.75) 100%, rgba(0,0,0,0) 0%);
+  background-image: linear-gradient(to right,rgb(0, 150, 170, 0.7) 100%, rgba(0,0,0,0) 0%);
   background-position: bottom;
   background-size: 10px 4px; /* 15px is the dash + gap width; 2px is border thickness */
   background-repeat: repeat-x;
@@ -64,7 +64,7 @@ html, body {
   width: 24px;
   height: 3px;
   margin: 0 auto;
-  background-color:  rgb(80, 30, 247, 0.75);
+  background-color:  rgba(0, 150, 170, 0.75);
 }
 
 .first-header {
@@ -107,7 +107,7 @@ html, body {
 
 
 .Loochon-highlight {
-  color: rgb(0, 170, 170);
+  color: rgb(0, 170, 190);
   font-weight: 700;
   text-decoration: underline;
   
@@ -175,10 +175,11 @@ html, body {
   width: 100%;
   border: none;
   background:
-    radial-gradient(circle at 25% 45%, rgba(160, 100, 254, 0.8), transparent 34%),
-    radial-gradient(circle at 75% 55%, rgba(147, 51, 234, 0.75), transparent 36%),
-    linear-gradient(100deg, rgb(100, 80, 237), rgb(124, 58, 237), rgb(168, 85, 247));
-  background-size: 200% 200%, 200% 200%, 100% 100%;
+  radial-gradient(circle at 15% 50%, rgba(0, 170, 220, 0.85), transparent 50%),
+  radial-gradient(circle at 45% 30%, rgba(0, 100, 241, 0.9), transparent 50%),
+  radial-gradient(circle at 75% 60%, rgba(99, 102, 241, 0.9), transparent 50%),
+  linear-gradient(90deg, #00aaaa, #3b82f6, #8b5cf6, #00aaaa);
+background-size: 180% 180%, 160% 160%, 170% 170%, 300% 100%;
   color: white;
   border-radius: 10px;
   padding: 10px;
@@ -208,10 +209,10 @@ html, body {
   height: 150px; /* The thickness of your stripe */
   overflow: hidden;
   background:
-    radial-gradient(circle at 25% 45%, rgba(160, 100, 254, 0.8), transparent 34%),
-    radial-gradient(circle at 75% 55%, rgba(147, 51, 234, 0.75), transparent 36%),
-    linear-gradient(100deg, rgb(100, 80, 237), rgb(124, 58, 237), rgb(168, 85, 247));
-  background-size: 200% 200%, 200% 200%, 100% 100%;
+  radial-gradient(circle at 15% 50%, rgba(0, 200, 220, 0.85), transparent 24%),
+  
+  linear-gradient(90deg, #00aaaa, #3b82f6);
+background-size: 180% 180%, 160% 160%, 170% 170%, 300% 100%;
   animation: stripe-gradient 9s ease-in-out infinite;
   
   /* Centers the anchor point and applies the rotation */
@@ -228,11 +229,11 @@ html, body {
   overflow: hidden;
   z-index: -1;
   background:
-    radial-gradient(circle at 25% 45%, rgba(216, 180, 254, 0.8), transparent 34%),
-    radial-gradient(circle at 75% 55%, rgba(147, 51, 234, 0.75), transparent 36%),
-    linear-gradient(100deg, rgb(100, 80, 237), rgb(124, 58, 237), rgb(168, 85, 247));
+    radial-gradient(circle at 25% 45%, rgba(0, 170, 254, 0.8), transparent 34%),
+    radial-gradient(circle at 75% 55%, rgba(0, 70, 234, 0.75), transparent 36%),
+    linear-gradient(100deg, rgb(0, 150, 237), rgb(20, 100, 237), rgb(0, 220, 247));
   background-size: 200% 200%, 200% 200%, 100% 100%;
-  animation: stripe-gradient 9s ease-in-out infinite;
+  animation: stripe-gradient 5s ease-in infinite;
   
   /* Centers the anchor point and applies the rotation */
   rotate: 0deg;
@@ -323,7 +324,7 @@ html, body {
 }
 
 .highlight {
-  color: rgb(120, 30, 247, 0.75);
+  color: rgb(0, 100, 247, 0.75);
   font-weight: 700;
 }
 
@@ -335,4 +336,50 @@ html, body {
   font-size: calc(9*var(--fluid-metric));
   font-weight: 700;
   color: rgba(10, 37, 64);
+}
+
+.hire-specialists-container {
+  width: 100%;
+  margin-top:40px;
+  align-items: left;
+}
+
+.hire-specialists-title {
+  font-size: calc(7*var(--fluid-metric));
+  font-weight: 700;
+  color: rgba(10, 37, 64);
+  margin-left: 25px;
+}
+
+.hire-specialists-description {
+  font-size: calc(4*var(--fluid-metric));
+  font-weight: 700;
+  color: rgba(10, 37, 64, 0.7);
+  margin-left: 25px;
+  width: 75%;
+  margin-top: 10px;
+}
+
+.prestadores-image-container-wrapper {
+  margin-top: 40px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.prestadores-container {
+  width: fit-content;
+  padding: calc(1.8 * var(--fluid-metric));
+  background-color: rgb(255, 255, 255);
+  border-radius: calc(6.4 * var(--fluid-metric));
+  border: 1px solid rgba(130, 130, 130, 0.7);
+  box-shadow: calc(1 * var(--fluid-metric)) calc(1 * var(--fluid-metric)) calc(1 * var(--fluid-metric)) calc(1 * var(--fluid-metric)) rgba(0, 0, 0, 0.1);
+}
+
+.prestadores-image {
+  display: block;
+  width: calc(70 * var(--fluid-metric));
+  height: auto;
+  border-radius: calc(4.4 * var(--fluid-metric));
 }
