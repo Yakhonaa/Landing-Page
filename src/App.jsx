@@ -1,4 +1,21 @@
+import { useEffect, useState } from 'react'
+
 function App() {
+  const [showStickyBar, setShowStickyBar] = useState(false)
+
+  useEffect(() => {
+    const SCROLL_THRESHOLD = 400
+
+    function handleScroll() {
+      setShowStickyBar(window.scrollY > SCROLL_THRESHOLD)
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    handleScroll()
+
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
     <main className="min-h-screen">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -20,7 +37,8 @@ function App() {
         <div className="first-header"> 
           <div className="left-header">
             <div className="left-header-content-description">
-              <p>Loochon is a platform that allows you to hire local professionals and offer your skills to the world.</p>
+              <p>Loochon is a platform that allows you to hire local professionals 
+                and offer your skills to the world.</p>
             </div>
           </div>
           <div className="right-header">
@@ -42,19 +60,14 @@ function App() {
             </div>
         </div>
         <h3 className="quick-overall-content-title">Reach out to professionals anywhere across <span className="highlight">Colombia</span></h3>
-        <div className="quick-overall">
-          <div className="quick-overall-content"> 
-            <p className="quick-overall-content-description">
-              Over 250 categories to choose from, and 10,000+ verified professionals.
-            </p>
-          </div>
-          <div className="quick-overall-content-separator"></div>
-          <div className="quick-overall-content"> 
-            <p className="quick-overall-content-description">
-              Hire professionals all across Colombia, or offer your skills in your region.
-            </p>
-          </div>
-        </div>
+        <ul className="quick-overall">
+          <li className="quick-overall-content quick-overall-content-description">
+            Over 250 categories to choose from, and 10,000+ verified professionals.
+          </li>
+          <li className="quick-overall-content quick-overall-content-description">
+            Hire professionals all across Colombia, or offer your skills in your region.
+          </li>
+        </ul>
         <div className="stripe-wrapper">
           <div className="diagonal-stripe-2"></div>
         </div>
@@ -90,13 +103,16 @@ function App() {
           <div className="stripe-wrapper">
             <div className="diagonal-stripe-4"></div>
           </div>
-          <div className="prestadores-image-container-wrapper">
+          <div class="prestadores-image-container-wrapper second-prestadores-container">
             <div className="prestadores-container">
               <img src="/prestadores.jpg" className="prestadores-image" alt="Hire specialists" />
             </div>
           </div>
         </div>
         <div className="hire-specialists-container">
+        <div className="stripe-wrapper">
+            <div className="diagonal-stripe-7"></div>
+          </div>
           <h3 className="hire-specialists-title-special-2">Use both sides of the platform</h3>
           <p className="hire-specialists-description">
           Why limit yourself? Our platform is designed for the modern ecosystem where you 
@@ -104,6 +120,32 @@ function App() {
           comprehensive marketplace supporting over 200 distinct job categories, 
           ensuring that no matter how niche your project or skill set is, you have a home here.
           </p>
+        </div>
+
+        <div className="popular-jobs-container">
+          <h3 className="popular-jobs-title">Find your niche in:</h3>
+          <ul className="popular-jobs-list">
+            <li className="popular-jobs-item">⚡ Electrician</li>
+            <li className="popular-jobs-item">🔧 Plumber</li>
+            <li className="popular-jobs-item">🧹 House Cleaner</li>
+            <li className="popular-jobs-item">🪚 Carpenter</li>
+            <li className="popular-jobs-item">🎨 Painter</li>
+            <li className="popular-jobs-item">🌱 Gardener</li>
+            <li className="popular-jobs-item">🔨 Handyman</li>
+            <li className="popular-jobs-item">💇 Hairdresser</li>
+            <li className="popular-jobs-item">🏋️ Personal Trainer</li>
+            <li className="popular-jobs-item">🔩 Mechanic</li>
+            <li className="popular-jobs-item">💻 Web Developer</li>
+            <li className="popular-jobs-item">🎨 Graphic Designer</li>
+            <li className="popular-jobs-item">✍️ Copywriter</li>
+            <li className="popular-jobs-item">📱 Mobile Developer</li>
+            <li className="popular-jobs-item">📊 Data Analyst</li>
+            <li className="popular-jobs-item">🎬 Video Editor</li>
+            <li className="popular-jobs-item">📈 SEO Specialist</li>
+            <li className="popular-jobs-item">💼 Virtual Assistant</li>
+            <li className="popular-jobs-item">🎯 Marketing Strategist</li>
+            <li className="popular-jobs-item">🤖 AI Engineer</li>
+          </ul>
         </div>
 
         <div className="stripe-wrapper">
@@ -137,6 +179,22 @@ function App() {
         </div>
 
       </section>
+
+      <div
+        className={
+          showStickyBar
+            ? 'sticky-bottom-bar sticky-bottom-bar--visible'
+            : 'sticky-bottom-bar'
+        }
+      >
+        <div className="sticky-bottom-bar-content">
+        <div className="left-header-content-buttons-container-2">
+          <div className="left-header-content-buttons-2">
+              <button className="left-header-content-button-2">Get Started</button>
+            </div>
+        </div>
+        </div>
+      </div>
     </main>
   )
 }

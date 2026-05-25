@@ -1,5 +1,60 @@
 @import "tailwindcss";
 
+.sticky-bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: calc(60 * var(--px));
+  background-color: rgba(246, 249, 252);
+  box-shadow: 0 calc(-2 * var(--px)) calc(14 * var(--px)) rgba(0, 0, 0, 0.12);
+  transform: translateY(100%);
+  transition: transform 0.6s ease;
+  z-index: 100;
+  pointer-events: none;
+  
+
+
+}
+
+.sticky-bottom-bar--visible {
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.popular-jobs-container {
+  width: 100%;
+  margin-top: calc(30 * var(--px));
+  margin-bottom: calc(80 * var(--px));
+}
+
+.popular-jobs-title {
+  font-size: calc(5.5 * var(--fluid-metric));
+  font-weight: 700;
+  color: rgba(10, 37, 64);
+  margin-left: calc(25 * var(--px));
+}
+
+.popular-jobs-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(10, auto);
+  grid-auto-flow: column;
+  justify-content: space-between;
+  row-gap: calc(12 * var(--px));
+  list-style: none;
+  margin-top: calc(20 * var(--px));
+  padding: 0 calc(30 * var(--px));
+}
+
+.popular-jobs-item {
+  font-size: calc(3.5 * var(--fluid-metric));
+  font-weight: 700;
+  color: rgba(10, 37, 64);
+}
+
+
+
 :root {
   --fluid-metric: 1vw;
   --px: calc(100vw / 412);
@@ -42,7 +97,7 @@ html, body {
   margin-left: 0;
 
   height: calc(73 * var(--px));
-  background-image: linear-gradient(to right, rgb(0, 150, 170, 0.7) 100%, rgba(0,0,0,0) 0%);
+  background-image: linear-gradient(to right, rgb(0, 170, 220, 0.97) 100%, rgba(0,0,0,0) 0%);
   background-position: bottom;
   background-size: calc(10 * var(--px)) calc(4 * var(--px));
   background-repeat: repeat-x;
@@ -71,7 +126,7 @@ html, body {
   width: calc(24 * var(--px));
   height: calc(3 * var(--px));
   margin: 0 auto;
-  background-color: rgba(0, 150, 170, 0.75);
+  background-color: rgb(0, 170, 220, 0.97);
 }
 
 .first-header {
@@ -113,7 +168,7 @@ html, body {
 }
 
 .Loochon-highlight {
-  color: rgb(0, 170, 190);
+  color: rgb(0, 175, 220, 0.97);
   font-weight: 700;
   text-decoration: underline;
 }
@@ -162,7 +217,7 @@ html, body {
   border-radius: calc(4.4 * var(--fluid-metric));
 }
 
-.left-header-content-buttons-container {
+.left-header-content-buttons-container, .left-header-content-buttons-container-2 {
   width: 100%;
   height: fit-content;
   justify-content: center;
@@ -171,12 +226,12 @@ html, body {
   flex-direction: column;
 }
 
-.left-header-content-buttons {
+.left-header-content-buttons, .left-header-content-buttons-2 {
   width: 80%;
   margin-top: calc(10 * var(--px));
 }
 
-.left-header-content-button {
+.left-header-content-button, .left-header-content-button-2 {
   width: 100%;
   border: none;
   background:
@@ -238,8 +293,17 @@ html, body {
   width: 300%;
   z-index: -1;
   height: calc(150 * var(--px));
-
   rotate: 20deg;
+}
+
+.diagonal-stripe-3, .diagonal-stripe-4 {
+  overflow: hidden;
+  background-color: rgb(0, 170, 240, 0.97);
+
+  
+  animation: stripe-gradient 1s ease-in-out infinite;
+
+  box-shadow: 0 0 calc(10 * var(--px)) calc(1 * var(--px)) rgba(0, 200, 220, 0.25);
 }
 
 .diagonal-stripe-4 {
@@ -255,7 +319,7 @@ html, body {
 
 .diagonal-stripe-5 {
   position: absolute;
-  top: calc(25 * var(--px));
+  top: calc(-40 * var(--px));
   left: -45%;
   width: 300%;
   height: calc(10 * var(--px));
@@ -265,7 +329,19 @@ html, body {
 
 .diagonal-stripe-6 {
   position: absolute;
-  top: calc(-3 * var(--px));
+  top: calc(-75 * var(--px));
+  left: -45%;
+  width: 300%;
+  height: calc(10 * var(--px));
+  
+  rotate: 0deg;
+  
+}
+
+
+.diagonal-stripe-7 {
+  position: absolute;
+  top: calc(-40 * var(--px));
   left: -45%;
   width: 300%;
   height: calc(10 * var(--px));
@@ -276,18 +352,17 @@ html, body {
 
 
 
-
-.diagonal-stripe-2, .diagonal-stripe-3, .diagonal-stripe-4, .diagonal-stripe-5, .diagonal-stripe-6 {
+.diagonal-stripe-2, .diagonal-stripe-5, .diagonal-stripe-6, .diagonal-stripe-7 {
   overflow: hidden;
   z-index: -1;
   background:
     radial-gradient(circle at 25% 45%, rgba(0, 170, 254, 0.8), transparent 34%),
-    radial-gradient(circle at 75% 55%, rgba(0, 70, 234, 0.75), transparent 36%),
-    linear-gradient(100deg, rgb(0, 150, 237), rgb(20, 100, 237), rgb(0, 220, 247));
+    radial-gradient(circle at 75% 55%, rgb(0, 170, 240, 0.97), transparent 36%),
+    linear-gradient(100deg, rgb(0, 150, 237), rgb(0, 170, 237), rgb(0, 220, 247));
   background-size: 200% 200%, 200% 200%, 100% 100%;
   animation: stripe-gradient 5s ease-in infinite;
 
-  box-shadow: 0 0 calc(10 * var(--px)) calc(1 * var(--px)) rgba(124, 58, 237, 0.25);
+  box-shadow: 0 0 calc(5 * var(--px)) calc(1 * var(--px)) rgb(0, 100, 240, 0.3);
 }
 
 
@@ -331,7 +406,7 @@ html, body {
 
 .quick-overall {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   gap: calc(20 * var(--px));
@@ -339,6 +414,13 @@ html, body {
   margin-left: calc(26 * var(--px));
   margin-right: calc(26 * var(--px));
   margin-bottom: calc(20 * var(--px));
+  width: 90%;
+  padding-left: calc(24 * var(--px));
+  list-style: disc;
+}
+
+.quick-overall li::marker {
+  color: rgba(10, 37, 64);
 }
 
 .quick-overall-content {
@@ -364,14 +446,8 @@ html, body {
   color: rgba(10, 37, 64);
 }
 
-.quick-overall-content-separator {
-  flex: 0 0 1px;
-  align-self: stretch;
-  background-color: rgba(10, 37, 64, 1);
-}
-
 .highlight {
-  color: rgb(0, 100, 247, 0.75);
+  color: rgb(0, 150, 240, 0.97);
   font-weight: 700;
 }
 
@@ -416,7 +492,7 @@ html, body {
 .hire-specialists-description {
   font-size: calc(4 * var(--fluid-metric));
   font-weight: 700;
-  color: rgba(10, 37, 64, 0.7);
+  color: rgba(10, 37, 64, 0.9);
   margin-left: calc(25 * var(--px));
   width: 90%;
   margin-top: calc(10 * var(--px));
@@ -437,12 +513,17 @@ html, body {
   background-color: rgb(255, 255, 255);
   border-radius: calc(6.4 * var(--fluid-metric));
   border: 1px solid rgba(130, 130, 130, 0.7);
+  margin-bottom: calc(30 * var(--px));
   box-shadow:
     calc(1 * var(--fluid-metric))
     calc(1 * var(--fluid-metric))
     calc(1 * var(--fluid-metric))
     calc(1 * var(--fluid-metric))
     rgba(0, 0, 0, 0.1);
+}
+
+.second-prestadores-container {
+  margin-bottom: calc(80 * var(--px));
 }
 
 .prestadores-image {
@@ -468,10 +549,11 @@ html, body {
 .why-us-description {
   font-size: calc(4 * var(--fluid-metric));
   font-weight: 700;
-  color: rgba(10, 37, 64, 0.7);
+  color: rgba(10, 37, 64, 0.9);
   margin-left: calc(25 * var(--px));
   width: 90%;
   margin-top: calc(10 * var(--px));
+  margin-bottom: calc(50 * var(--px))
 }
 
 .highlight-list {
