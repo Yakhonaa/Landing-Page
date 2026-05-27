@@ -37,8 +37,8 @@ function App() {
         <div className="first-header"> 
           <div className="left-header">
             <div className="left-header-content-description">
-              <p>Loochon is a platform that allows you to hire local professionals 
-                and offer your skills to the world.</p>
+              <p>We are Colombia's first freelance platform, which maps major cities
+                down to regional municipalities</p>
             </div>
           </div>
           <div className="right-header">
@@ -177,6 +177,29 @@ function App() {
            </ul>
           </p>
         </div>
+
+        <footer className="credibility-section">
+          <div className="credibility-column">
+            <h3 className="credibility-title">About Us</h3>
+            <ul className="credibility-list">
+              <li className="credibility-item">Our Story</li>
+              <li className="credibility-item">Our Mission</li>
+              <li className="credibility-item">Careers</li>
+              <li className="credibility-item">Press</li>
+              <li className="credibility-item">Blog</li>
+            </ul>
+          </div>
+          <div className="credibility-column">
+            <h3 className="credibility-title">Contact Us</h3>
+            <ul className="credibility-list">
+              <li className="credibility-item">support@gmail.com</li>
+              <li className="credibility-item">+57 300 000 0000</li>
+              <li className="credibility-item">Bogotá, Colombia</li>
+              <li className="credibility-item">Help Center</li>
+              <li className="credibility-item">WhatsApp</li>
+            </ul>
+          </div>
+        </footer>
 
       </section>
 

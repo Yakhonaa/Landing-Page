@@ -22,6 +22,41 @@
   pointer-events: auto;
 }
 
+.credibility-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: calc(20 * var(--px));
+  padding: calc(40 * var(--px)) calc(40 * var(--px)) calc(100 * var(--px));
+  background-color: rgba(10, 37, 64, 0.04);
+  border-top: 1px solid rgba(10, 37, 64, 0.1);
+}
+
+.credibility-column {
+  flex: 0 0 auto;
+}
+
+.credibility-title {
+  font-size: calc(5 * var(--fluid-metric));
+  font-weight: 700;
+  color: rgba(0, 140, 220, 1);
+  margin: 0 0 calc(15 * var(--px));
+}
+
+.credibility-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: calc(10 * var(--px));
+}
+
+.credibility-item {
+  font-size: calc(3.8 * var(--fluid-metric));
+  font-weight: 500;
+  color: rgba(10, 37, 64, 0.75);
+}
+
 .popular-jobs-container {
   width: 100%;
   margin-top: calc(30 * var(--px));
@@ -553,13 +588,12 @@ html, body {
   margin-left: calc(25 * var(--px));
   width: 90%;
   margin-top: calc(10 * var(--px));
-  margin-bottom: calc(50 * var(--px))
+  margin-bottom: calc(30 * var(--px))
 }
 
 .highlight-list {
   font-weight: 700;
   font-size: calc(5 * var(--fluid-metric));
-  color: rgb(0, 100, 247, 0.75);
+  color: rgb(0, 140, 220, 1);
   margin-bottom: 20px;
 }
-
