@@ -153,29 +153,32 @@ function App() {
           </div>
 
         <div className="why-us-container">
-           <h3 className="why-us-title">Why us?</h3>
-           <p className="why-us-description">
-           <ul>
-            <li className="highlight-list">🇨🇴 100% Colombian Coverage</li>
-            <li>We are Colombia's first freelance platform, which
-              maps major metropolitan hubs down to regional 
-              municipalities. Search and filter by exact 
-              location to instantly find pioneering 
-              local professionals who perfectly match your regional context.</li><br />
+          <h3 className="why-us-title">Why us?</h3>
+          <div className="why-us-description">
 
-               <li className="highlight-list">🛠️ 200+ Industries At Your Fingertips</li>
-            <li>Our platform spans over 200 job categories. Whether you need reliable hands-on help—like 
-              licensed electricians, professional cleaners, and construction experts—or 
-              specialized trade services, 
-              the exact professional you need in your city is just a message away.</li><br />
+            <h4 className="highlight-list">🇨🇴 100% Colombian Coverage</h4>
+            <ul className="why-us-sublist">
+              <li>Maps every major hub and regional municipality across Colombia.</li>
+              <li>Search and filter by exact location to find experts near you.</li>
+            </ul>
 
-            <li className="highlight-list">💬 Real-Time, Direct Communication</li>
-            <li>Skip the traditional agency red tape. Loochon puts you in
-               direct contact with experts instantly, making collaboration, 
-               negotiation, and project updates effortless.</li><br />
-            
-           </ul>
-          </p>
+            <h4 className="highlight-list">🛠️ 200+ Industries At Your Fingertips</h4>
+            <ul className="why-us-sublist">
+              <li>Hands-on services: electricians, cleaners, construction experts and more.</li>
+              <li>Specialized trade and online work across 200+ categories.</li>
+            </ul>
+
+            <h4 className="highlight-list">💬 Real-Time, Direct Communication</h4>
+            <ul className="why-us-sublist">
+              <li>Skip the agency red tape and chat with verified experts directly.</li>
+              <li>Collaborate, negotiate, and track every project in one place.</li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div className="stripe-wrapper">
+          <div className="diagonal-stripe-8"></div>
         </div>
 
         <footer className="credibility-section">

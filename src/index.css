@@ -26,7 +26,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: calc(20 * var(--px));
-  padding: calc(40 * var(--px)) calc(40 * var(--px)) calc(100 * var(--px));
+  padding: calc(25 * var(--px)) calc(40 * var(--px)) calc(100 * var(--px));
   background-color: rgba(10, 37, 64, 0.04);
   border-top: 1px solid rgba(10, 37, 64, 0.1);
 }
@@ -385,9 +385,7 @@ html, body {
   
 }
 
-
-
-.diagonal-stripe-2, .diagonal-stripe-5, .diagonal-stripe-6, .diagonal-stripe-7 {
+.diagonal-stripe-2, .diagonal-stripe-5, .diagonal-stripe-6, .diagonal-stripe-7, .diagonal-stripe-8 {
   overflow: hidden;
   z-index: -1;
   background:
@@ -398,6 +396,16 @@ html, body {
   animation: stripe-gradient 5s ease-in infinite;
 
   box-shadow: 0 0 calc(5 * var(--px)) calc(1 * var(--px)) rgb(0, 100, 240, 0.3);
+}
+
+.diagonal-stripe-8 {
+  position: absolute;
+  top: calc(0 * var(--px));
+  left: -45%;
+  width: 300%;
+  height: calc(2 * var(--px));
+  box-shadow: none;
+  rotate: 0deg;
 }
 
 
@@ -595,5 +603,24 @@ html, body {
   font-weight: 700;
   font-size: calc(5 * var(--fluid-metric));
   color: rgb(0, 140, 220, 1);
-  margin-bottom: 20px;
+  margin: 0 0 calc(10 * var(--px));
+}
+
+.why-us-sublist {
+  list-style: disc;
+  padding-left: calc(20 * var(--px));
+  margin: 0 0 calc(20 * var(--px));
+  display: flex;
+  flex-direction: column;
+  gap: calc(16 * var(--px));
+}
+
+.why-us-sublist li {
+  font-size: calc(3.8 * var(--fluid-metric));
+  font-weight: 500;
+  color: rgba(10, 37, 64, 0.85);
+}
+
+.why-us-sublist li::marker {
+  color: rgb(10, 37, 64, 1);
 }
