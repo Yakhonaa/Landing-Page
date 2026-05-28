@@ -48,7 +48,7 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: calc(10 * var(--px));
+  gap: calc(15 * var(--px));
 }
 
 .credibility-item {
@@ -124,14 +124,23 @@
   grid-template-columns: auto auto;
   grid-template-rows: repeat(10, auto);
   grid-auto-flow: column;
-  justify-content: space-between;
-  row-gap: calc(12 * var(--px));
+  justify-content: space-around;
+  row-gap: calc(10 * var(--px));
   list-style: none;
   margin-top: calc(20 * var(--px));
   padding: 0 calc(30 * var(--px));
+  margin-left: calc(0 * var(--px));
 }
 
 .popular-jobs-item {
+  border: 1px solid rgba(10, 37, 64, 0.1);
+  border-radius: calc(10 * var(--px));
+  padding-left: calc(10 * var(--px));
+  padding-right: calc(10 * var(--px));
+  padding-top: calc(10 * var(--px));
+  padding-bottom: calc(10 * var(--px));
+  background-color: rgba(255, 255, 255);
+  border: 1px solid rgba(0, 170, 220, 0.25);
   font-size: calc(3.5 * var(--fluid-metric));
   font-weight: 700;
   color: rgba(10, 37, 64);
@@ -287,6 +296,7 @@ html, body {
 .top-header-content h1,
 .top-header-content h2 {
   margin-left: calc(-40 * var(--px));
+  
 }
 
 .left-header-content, .right-header-content {
@@ -566,6 +576,7 @@ html, body {
 
 .quick-overall-content {
   flex: 1;
+  
 }
 
 .quick-overall-content-title,
@@ -600,12 +611,14 @@ html, body {
   font-size: calc(9 * var(--fluid-metric));
   font-weight: 700;
   color: rgba(10, 37, 64);
+  
 }
 
 .hire-specialists-container {
   width: 100%;
   margin-top: calc(40 * var(--px));
   align-items: left;
+  
 }
 
 .hire-specialists-title {
@@ -637,6 +650,8 @@ html, body {
   margin-left: calc(25 * var(--px));
   width: 90%;
   margin-top: calc(10 * var(--px));
+  
+  
 }
 
 .prestadores-image-container-wrapper {
