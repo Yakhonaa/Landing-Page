@@ -96,10 +96,11 @@ function App() {
         <h3 className="quick-overall-content-title">Reach out to professionals anywhere across <span className="highlight">Colombia</span></h3>
         <ul className="quick-overall">
           <li className="quick-overall-content quick-overall-content-description">
-            Over 250 categories to choose from, and 10,000+ verified professionals.
+            Join a thriving community of professionals all around the country
           </li>
           <li className="quick-overall-content quick-overall-content-description">
-            Hire professionals all across Colombia, or offer your skills in your region.
+            Hire any kind of specialist, or offer your 
+            skills in your region
           </li>
         </ul>
         <div className="stripe-wrapper">
@@ -111,7 +112,7 @@ function App() {
         <div className="hire-specialists-container">
           <h3 className="hire-specialists-title">Hire specialists quickly</h3>
           <p className="hire-specialists-description">
-            Reach out to an expert in your area and get the job done in less than a minute.
+            Reach out to an expert in your area in less than a minute.
             Our platform is designed to be easy to use and navigate, so you can get the 
             job done quickly and efficiently.
           </p>

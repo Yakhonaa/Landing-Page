@@ -64,6 +64,13 @@
   padding: 0;
 }
 
+
+
+@media (min-width: 768px) {
+  .mobile-container { display: none; }
+  .desktop-container { display: block; }
+}
+
 .social-link {
   display: inline-flex;
   align-items: center;
