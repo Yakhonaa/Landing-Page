@@ -254,15 +254,15 @@ function MobileLanding() {
               <li className="credibility-item credibility-item--social">
                 <a
                   className="social-link social-link--facebook"
-                  href="https://www.facebook.com/loochonmedia"
+                  href="https://www.facebook.com/profile.php?id=61590469981693"
                   target="_blank"
                   rel="noreferrer noopener"
-                  aria-label="Facebook loochonmedia"
+                  aria-label="Facebook Loochon"
                 >
                   <svg className="social-icon" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M24 12a12 12 0 1 0-13.88 11.85v-8.38H7.08V12h3.04V9.36c0-3 1.79-4.67 4.53-4.67 1.31 0 2.69.24 2.69.24v2.96h-1.52c-1.49 0-1.95.93-1.95 1.87V12h3.33l-.53 3.47h-2.8v8.38A12 12 0 0 0 24 12z" />
                   </svg>
-                  <span>loochonmedia</span>
+                  <span>Loochon</span>
                 </a>
               </li>
               <li className="credibility-item credibility-item--social">
