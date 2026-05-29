@@ -562,12 +562,9 @@ html, body {
   align-items: flex-start;
   gap: calc(20 * var(--px));
   margin-top: calc(20 * var(--px));
-  margin-left: calc(26 * var(--px));
-  margin-right: calc(26 * var(--px));
+  margin-left: calc(25 * var(--px));
   margin-bottom: calc(20 * var(--px));
-  width: 90%;
-  padding-left: calc(24 * var(--px));
-  list-style: disc;
+  margin-right: calc(25 * var(--px));
 }
 
 .quick-overall li::marker {
@@ -576,7 +573,17 @@ html, body {
 
 .quick-overall-content {
   flex: 1;
-  
+  border-radius: calc(10 * var(--px));
+  padding-left: calc(10 * var(--px));
+  padding-right: calc(10 * var(--px));
+  padding-top: calc(10 * var(--px));
+  padding-bottom: calc(10 * var(--px));
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(0, 170, 220, 0.25);
+  font-size: calc(3.5 * var(--fluid-metric));
+  font-weight: 700;
+  color: rgba(10, 37, 64);
+  box-shadow: 0 0 calc(10 * var(--px)) rgb(0,0,0, 0.065)
 }
 
 .quick-overall-content-title,
@@ -726,6 +733,16 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: calc(16 * var(--px));
+  border-radius: calc(10 * var(--px));
+  padding-left: calc(30 * var(--px));
+  padding-right: calc(10 * var(--px));
+  padding-top: calc(10 * var(--px));
+  padding-bottom: calc(10 * var(--px));
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(0, 170, 220, 0.25);
+  font-size: calc(3.5 * var(--fluid-metric));
+  font-weight: 700;
+  color: rgba(10, 37, 64);
 }
 
 .why-us-sublist li {

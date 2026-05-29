@@ -188,7 +188,7 @@ function App() {
           </div>
 
         <div className="why-us-container">
-          <h3 className="why-us-title">Why us?</h3>
+          <h3 className="why-us-title">Why Loochon?</h3>
           <div className="why-us-description">
 
             <h4 className="highlight-list">🇨🇴 100% Colombian Coverage</h4>
