@@ -34,7 +34,10 @@ function MobileLanding() {
     <main className="min-h-screen">
       <section>
         <div className="Navbar">
-          <img src="public/icon_foreground.png" alt="Loochon" className="logo" />
+          <a className="navbar-brand" href="#top">
+            <img src="public/icon_foreground.png" alt="Loochon" className="logo" />
+            <span className="navbar-brand-name">Loochon</span>
+          </a>
           <button
             className={isMenuOpen ? 'button-icon button-icon--open' : 'button-icon'}
             type="button"
@@ -77,9 +80,10 @@ function MobileLanding() {
           <div className="right-header">
             <div className="right-header-content">
               <div className="image-stack">
-                <div className="offer-image-container">
-                  <img src="/offer.jpg" className="offer-image" alt="Offer preview" />
-                </div>    
+                <div className="phone-mock">
+                  <span className="phone-mock-notch"></span>
+                  <img src="/offer.jpg" className="phone-mock-screen" alt="Offer preview" />
+                </div>
               </div>
             </div>
           </div>

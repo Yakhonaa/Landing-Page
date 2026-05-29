@@ -145,8 +145,14 @@ function DesktopLanding() {
               </div>
             </div>
             <div className="dt-hero-media">
-              <img src="/offer.jpg" alt="Offer preview" className="dt-hero-img dt-hero-img--front" />
-              <img src="/prestadores.jpg" alt="Hire specialists" className="dt-hero-img dt-hero-img--back" />
+              <div className="dt-phone dt-phone--back">
+                <span className="dt-phone-notch"></span>
+                <img src="/hire.jpg" alt="Hire specialists" className="dt-phone-screen" />
+              </div>
+              <div className="dt-phone dt-phone--front">
+                <span className="dt-phone-notch"></span>
+                <img src="/offer.jpg" alt="Offer preview" className="dt-phone-screen" />
+              </div>
             </div>
           </div>
         </section>
