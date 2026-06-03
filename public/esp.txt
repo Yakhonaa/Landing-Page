@@ -1,0 +1,7 @@
+# Loochon copy — Spanish (same key=value format as English):
+#
+#   esp-mobile.txt — phone layout (Spanish)
+#   esp-desk.txt   — desktop layout (Spanish)
+#
+# Section headers are in English (# --- Hero section ---) for editors.
+# Switch language via public/locale.txt (en or es) — see eng.txt / README in repo.

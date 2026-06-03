@@ -1,0 +1,110 @@
+# Platform: desk — all copy for the desktop layout
+# Format: key=value. Section headers (# --- Name ---) are for editors only.
+
+# --- Brand & common ---
+brand=Loochon
+cta.get_started=Get Started
+
+# --- Navigation ---
+nav.privacy=Privacy Policy
+nav.terms=Terms of Service
+nav.features=Features
+nav.jobs=Jobs
+nav.why=Why us
+
+# --- Hero section ---
+hero.title=Hire and Offer with
+hero.description=Colombia's first freelance platform, mapping major cities down to regional municipalities. Find the right professional, or offer your skills, anywhere in the country.
+hero.explore_jobs=Explore jobs
+
+# --- Image alt text ---
+alt.offer_preview=Offer preview
+alt.hire_specialists=Hire specialists
+
+# --- Quick overview / stats band section ---
+quick_overall.title_before=Reach out to professionals anywhere across 
+quick_overall.title_highlight=Colombia
+quick_overall.item.1=Join a thriving community of professionals all around the country
+quick_overall.item.2=Hire any kind of specialist, or offer your skills in your region
+
+band.stat.1.num=200+
+band.stat.1.label=job categories
+band.stat.2.num=100%
+band.stat.2.label=Colombian coverage
+band.stat.3.num=24/7
+band.stat.3.label=direct messaging
+
+# --- Section headings ---
+section.get_started=Get started
+section.popular_jobs_title=Find your niche in:
+section.why_title=Why Loochon?
+
+# --- Features section (hire / offer / both sides) ---
+feature.1.title=Hire specialists quickly
+feature.1.body=Reach out to an expert in your area in less than a minute. Our platform is designed to be easy to use and navigate, so you can get the job done quickly and efficiently.
+feature.2.title=Let others find you
+feature.2.body=Create a profile and let others know about your skills and services. Get hired for your next project and expand your career opportunities, or start your own business and grow your network.
+feature.3.title=Use both sides of the platform
+feature.3.body=Why limit yourself? Be an employer today and a creator tomorrow. We support over 200 distinct job categories, so no matter how niche your project or skill set is, you have a home here.
+
+# --- Popular jobs section ---
+popular_job.1=⚡ Electrician
+popular_job.2=🔧 Plumber
+popular_job.3=🧹 House Cleaner
+popular_job.4=🪚 Carpenter
+popular_job.5=🎨 Painter
+popular_job.6=🌱 Gardener
+popular_job.7=🔨 Handyman
+popular_job.8=💇 Hairdresser
+popular_job.9=🏋️ Personal Trainer
+popular_job.10=🔩 Mechanic
+popular_job.11=💻 Web Developer
+popular_job.12=🎨 Graphic Designer
+popular_job.13=✍️ Copywriter
+popular_job.14=📱 Mobile Developer
+popular_job.15=📊 Data Analyst
+popular_job.16=🎬 Video Editor
+popular_job.17=📈 SEO Specialist
+popular_job.18=💼 Virtual Assistant
+popular_job.19=🎯 Marketing Strategist
+popular_job.20=🤖 AI Engineer
+
+# --- Why us section ---
+why.1.title=🇨🇴 100% Colombian Coverage
+why.1.point.1=Maps every major hub and regional municipality across Colombia.
+why.1.point.2=Search and filter by exact location to find experts near you.
+why.2.title=🛠️ 200+ Industries At Your Fingertips
+why.2.point.1=Hands-on services: electricians, cleaners, construction experts and more.
+why.2.point.2=Specialized trade and online work across 200+ categories.
+why.3.title=💬 Real-Time, Direct Communication
+why.3.point.1=Skip the agency red tape and chat with verified experts directly.
+why.3.point.2=Collaborate, negotiate, and track every project in one place.
+
+# --- CTA section ---
+cta.ready=Ready to get to work?
+
+# --- Footer section ---
+footer.social_title=Social Media
+footer.contact_title=Contact Us
+footer.legal_title=Legal
+footer.copyright=Loochon. All rights reserved.
+
+# --- Contact section ---
+contact.1=support@gmail.com
+contact.2=Bogotá, Colombia
+contact.3=Help Center
+contact.4=WhatsApp
+
+# --- Social media section ---
+social.tiktok.name=loochonmedia
+social.tiktok.href=https://www.tiktok.com/@loochonmedia
+social.tiktok.label=TikTok @loochonmedia
+social.youtube.name=loochonmedia
+social.youtube.href=https://www.youtube.com/@loochonmedia
+social.youtube.label=YouTube @loochonmedia
+social.facebook.name=Loochon
+social.facebook.href=https://www.facebook.com/profile.php?id=61590469981693
+social.facebook.label=Facebook Loochon
+social.instagram.name=loochonmedia
+social.instagram.href=https://www.instagram.com/loochonmedia
+social.instagram.label=Instagram @loochonmedia

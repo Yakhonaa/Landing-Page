@@ -1,0 +1,15 @@
+# Loochon copy — English (key=value format):
+#
+#   eng-mobile.txt — phone layout
+#   eng-desk.txt   — desktop layout
+#
+# Spanish:
+#   esp-mobile.txt, esp-desk.txt
+#
+# --- How to switch language ---
+# Edit public/locale.txt to a single line:  en   or   es
+# Then refresh the browser (hard refresh if cached).
+#
+# Or use a URL (temporary, for testing):
+#   ?locale=es   or   ?locale=en
+# Example: http://localhost:5173/?locale=es
