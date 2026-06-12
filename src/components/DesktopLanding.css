@@ -309,12 +309,6 @@
   padding: 16px 18px;
   font-size: 16px;
   font-weight: 600;
-  transition: border-color 0.15s ease, transform 0.15s ease;
-}
-
-.dt-job:hover {
-  border-color: var(--dt-accent);
-  transform: translateY(-2px);
 }
 
 /* Why us */
